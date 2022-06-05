@@ -9,7 +9,12 @@ int main() {
     printf("Insira os valores: ");
     scanf("%f %f", &num1, &num2);
     
-    printf("Resultado: %i",restoDivisao(num1, num2));
+    if (num1 > num2) {
+        printf("Resultado: %i",restoDivisao(num1, num2));
+    } else {
+        printf("O primeiro numero deve ser maior que o segundo");
+    }
+
     return 0;
 }
 

@@ -9,11 +9,15 @@ int main() {
 
     float resultado = num1 - num2;
 
-    while (resultado > num2)
+    while (resultado >= num2)
     {
         resultado -= num2;
     }
-
-    printf("Resultado: %.0f\n", resultado);
+    
+    if (num1 > num2) {
+        printf("Resultado: %.0f\n", resultado);
+    } else {
+        printf("O primeiro numero deve ser maior que o segundo");
+    }
     return 0;
 }
